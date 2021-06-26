@@ -54,7 +54,7 @@
         $(".btn-search").on("click", function(){
             if($("#keyword").val() != "")
             {   
-                var url = "http://api.tvmaze.com/search/shows?q=" + $("#keyword").val();
+                var url = "https://api.tvmaze.com/search/shows?q=" + $("#keyword").val();
 
                 fetch(url).then(Response => Response.json()).then(data => {
 
